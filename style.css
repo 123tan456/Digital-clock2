@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-color: #d0d0f7;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box{
+	padding: 20px;
+	margin: 8px;
+	border: 2px solid #d0d0f7;
+	border-radius: 20px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.1),
+				10px 10px 15px rgba(0, 0, 0, 0.12);
+}
+
+h1{
+	color: #777994;
+	font-size: 50px;
+}
+
+.date{
+	display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+	.box{
+		margin: 5px;
+		width: 27px;
+		height: 27px;
+	}
+
+	h1{
+	font-size: 30px;
+	}
+}
